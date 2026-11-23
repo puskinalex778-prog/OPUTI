@@ -1,0 +1,17 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- Колба -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M43,24h22v6h-4v15l15,27c2,4 -1,9 -6,9H38c-5,0 -8,-5 -6,-9l15,-27V30h-4v-6z M51,30v17L39,69c-1,2 0,4 2,4h26c2,0 3,-2 2,-4L57,47V30h-6z"/>
+    <!-- Светящаяся жидкость внутри -->
+    <path android:fillColor="#38F2FF"
+        android:pathData="M43,60h22l4,8c1,2 0,3 -2,3H41c-2,0 -3,-1 -2,-3l4,-8z"/>
+    <!-- Пузырьки -->
+    <path android:fillColor="#FF52C7"
+        android:pathData="M50,51a4,4 0,1 1,0 8a4,4 0,1 1,0 -8z"/>
+    <path android:fillColor="#FFD84F"
+        android:pathData="M58,41a3,3 0,1 1,0 6a3,3 0,1 1,0 -6z"/>
+    <path android:fillColor="#38F2FF"
+        android:pathData="M53,33a2.5,2.5 0,1 1,0 5a2.5,2.5 0,1 1,0 -5z"/>
+</vector>

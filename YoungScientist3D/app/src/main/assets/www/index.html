@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>Юный учёный 3D</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+  { "imports": {
+      "three": "./js/lib/three.module.min.js",
+      "three/addons/": "./js/lib/addons/"
+  } }
+  </script>
+</head>
+<body>
+<div id="app">
+  <div id="topbar" class="hidden">
+    <button id="backBtn" class="iconbtn" aria-label="Назад">←</button>
+    <div id="title"></div>
+    <button id="whyBtn" class="pill">💡<span class="wide"> Почему?</span></button>
+    <button id="quizBtn" class="pill">❓<span class="wide"> Тест</span></button>
+  </div>
+
+  <div id="main">
+    <div id="stage"></div>
+    <div id="panel" class="hidden">
+      <div id="step"></div>
+      <div id="controls"></div>
+      <div id="info"></div>
+      <div id="hint">👆 Крути сцену пальцем, два пальца — приблизить</div>
+    </div>
+  </div>
+
+  <div id="menu">
+    <header>
+      <div class="logo">🔬</div>
+      <div>
+        <h1>Юный учёный</h1>
+        <p>3D-лаборатория опытов</p>
+      </div>
+      <div id="totalStars">⭐ 0</div>
+    </header>
+    <div id="cards"></div>
+    <footer>Каждый опыт даёт до 3 звёзд: ⭐ провести опыт, ⭐ узнать «почему», ⭐ пройти тест.</footer>
+  </div>
+
+  <div id="modal" class="hidden">
+    <div class="card">
+      <div id="modalBody"></div>
+      <div id="modalBtns"></div>
+    </div>
+  </div>
+  <div id="toast"></div>
+  <div id="loading">Загружаем лабораторию…</div>
+</div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
